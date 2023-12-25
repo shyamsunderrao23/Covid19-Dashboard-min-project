@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-covid19-heading {
+  color: var(--Light-blue-gray-50, #f8fafc);
+  text-align: center;
+  font-family: Bree Serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  margin-bottom: 24px;
+  margin-left: 30px;
+}
+.footer-sub-heading {
+  color: var(--Light-blue-500, #3b82f6);
+  font-family: Bree Serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.footer-description {
+  color: var(--Light-blue-gray-400, #94a3b8);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 24px;
+  margin-left: 20px;
+}
+.footer-social-media-list {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 90px;
+  justify-content: center;
+}
+.social-media-list {
+  list-style-type: none;
+}
+.github {
+  margin-left: 64px;
+  width: 42px;
+  height: 46.106px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: var(--Light-blue-gray-300, #cbd5e1);
+}
+.instagram {
+  margin-left: 64px;
+  width: 47px;
+  height: 61px;
+  flex-shrink: 0;
+  color: var(--Light-blue-gray-300, #cbd5e1);
+  text-align: center;
+  font-family: Font Awesome 5 Brands;
+  font-size: 52.923px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.twitter {
+  margin-left: 64px;
+  width: 49px;
+  height: 40px;
+  flex-shrink: 0;
+  color: var(--Light-blue-gray-300, #cbd5e1);
+}
+
+@media screen and(max-width :767px) {
+  .footer-covid19-heading {
+    font-size: 20px;
+    margin-bottom: 12px;
+    margin-left: 515px;
+  }
+  .footer-sub-heading {
+    font-size: 20px;
+  }
+  .footer-description {
+    font-size: 14px;
+    margin-bottom: 19px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .social-media-list {
+    display: flex;
+  }
+  .github {
+    width: 22px;
+    height: 25px;
+    flex-shrink: 0;
+    stroke-width: 1.068px;
+    margin-left: 24px;
+  }
+  .instagram {
+    width: 23px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-left: 24px;
+  }
+  .twitter {
+    margin-left: 24px;
+    width: 24px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+}

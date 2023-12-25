@@ -1,0 +1,445 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.ul-state-lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.state-list-container {
+  margin-top: 106px;
+  margin-bottom: 120px;
+  width: 1146px;
+  height: 2080px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid var(--Light-blue-gray-600, #475569);
+  background: #1e1e30;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+}
+.state-table-header {
+  display: flex;
+  flex-direction: row;
+}
+.statesList-container {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 34px;
+}
+
+.state-list-title {
+  color: var(--Light-blue-gray-50, #f8fafc);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  margin-left: 16px;
+}
+
+.ascending-btn-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-left: 12px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+.asc-icon {
+  color: var(--Light-blue-gray-400, #94a3b8);
+}
+.descending-btn-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-left: 12px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+.desc-icon {
+  color: var(--Light-blue-gray-400, #94a3b8);
+}
+
+.state-confirmed-list {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 110px;
+}
+
+.conform-table {
+  color: var(--Light-blue-gray-50, #f8fafc);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+
+.state-active-list {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 110px;
+}
+.active-table {
+  color: var(--Light-blue-gray-50, #f8fafc);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.state-recovered-list {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 110px;
+}
+.recovered-table {
+  color: var(--Light-blue-gray-50, #f8fafc);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.state-deceased-list {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 110px;
+}
+
+.deceased-table {
+  color: var(--Light-blue-gray-50, #f8fafc);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.state-population-list {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 110px;
+}
+
+.population-table {
+  color: var(--Light-blue-gray-50, #f8fafc);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.hr-line {
+  width: 1146px;
+  height: 1px;
+  color: #475569;
+  margin-bottom: 24px;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.home-app-container {
+  background-color: #161625;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-container {
+  margin-top: 64px;
+  display: flex;
+  background: #2f2f43;
+  border: 1px solid #2f2f43;
+  outline: none;
+  border-radius: 8px;
+}
+.search-icon-btn {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #94a3b8;
+  margin-left: 64px;
+  align-self: center;
+  margin-top: 7px;
+}
+
+.search-input {
+  width: 824px;
+  height: 72px;
+  flex-shrink: 0;
+  background: #2f2f43;
+  border: 1px solid #2f2f43;
+  outline: none;
+  color: var(--Light-blue-gray-400, #94a3b8);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-left: 8px;
+}
+.ul-covid-19-status {
+  width: 979px;
+  height: 142px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.conform {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+}
+
+.conform-heading {
+  color: #ff073a;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  margin-left: 17px;
+}
+.conformed-logo {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  align-self: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.conform-count {
+  color: #ff073a;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+}
+.active-heading {
+  color: #007bff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  align-self: center;
+}
+.active-logo {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  align-self: center;
+}
+.active {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+}
+.active-count {
+  color: #007bff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+}
+
+.recovered {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+}
+
+.recovered-heading {
+  align-self: center;
+  color: #28a745;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.recovered-logo {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  align-self: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.recovered-count {
+  color: #28a745;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+}
+
+.deceased {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+}
+
+.deceased-heading {
+  align-self: center;
+  color: #6c757d;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.deceased-logo {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  align-self: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.deceased-count {
+  color: #6c757d;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+}
+@media screen and (max-width: 767px) {
+  .search-container {
+    margin-top: 24px;
+  }
+  .search-icon-btn {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-left: 16px;
+    margin-top: 0px;
+  }
+  .search-input {
+    margin-left: 8px;
+    width: 312px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+  .conform {
+    margin-left: 46px;
+    margin-right: 90px;
+    margin-bottom: 48px;
+  }
+  .active {
+    margin-left: 0px;
+    margin-right: 80px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+  }
+  .recovered {
+    margin-left: 50px;
+    margin-right: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .deceased {
+    margin-left: 12px;
+    margin-right: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .ul-covid-19-status {
+    width: 360px;
+    margin-top: 48px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    flex-grow: 0;
+  }
+
+  .conform-heading {
+    font-size: 12px;
+    margin-right: 13px;
+  }
+  .conformed-logo {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .conform-count {
+    font-size: 16px;
+  }
+  .active-heading {
+    font-size: 12px;
+  }
+  .active-logo {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .active-count {
+    font-size: 16px;
+  }
+  .recovered-heading {
+    font-size: 12px;
+  }
+  .recovered-logo {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .recovered-count {
+    font-size: 16px;
+  }
+  .deceased-heading {
+    font-size: 12px;
+  }
+  .deceased-logo {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .deceased-count {
+    font-size: 16px;
+  }
+}
