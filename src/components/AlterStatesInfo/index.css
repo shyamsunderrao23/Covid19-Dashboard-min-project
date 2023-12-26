@@ -1,0 +1,110 @@
+.st-container-home {
+  width: 15%;
+  margin-top: 14px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+}
+.list-all-cases {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pop-columns {
+  width: 15%;
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+.con-columns {
+  width: 15%;
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+.act-columns {
+  width: 15%;
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+.rec-columns {
+  width: 15%;
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+.dec-columns {
+  width: 15%;
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+.link-home {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.st-names-home {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #f1f5f9;
+  padding: 0px 32px;
+}
+
+.con-home {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  color: #ff073a;
+  margin-left: 20px;
+  width: 15%;
+}
+
+.act-home {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #007bff;
+  margin-left: 20px;
+  width: 15%;
+}
+
+.rec-home {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #28a745;
+  margin-left: 20px;
+  width: 15%;
+}
+
+.dec-home {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6c757d;
+  margin-left: 20px;
+  width: 15%;
+}
+.pop-home {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #94a3b8;
+  margin-left: 20px;
+  width: 15%;
+}

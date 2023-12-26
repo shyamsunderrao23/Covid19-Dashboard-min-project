@@ -7,6 +7,7 @@ import {FcGenericSortingAsc, FcGenericSortingDesc} from 'react-icons/fc'
 import Header from '../Header'
 import Footer from '../Footer'
 import StatesInfo from '../StatesInfo'
+import AlterStatesInfo from '../AlterStatesInfo'
 import './index.css'
 
 // states Data
@@ -289,11 +290,43 @@ class Home extends Component {
             <p className="population-table">Population</p>
           </div>
         </div>
+
+        <div className="alternative-state-header">
+          <div className="st-list-container">
+            <p className="st-table">ST/UT</p>
+          </div>
+          <div className="st-cn-list">
+            <p className="cn-table">CON</p>
+          </div>
+          <div className="st-ac-list">
+            <p className="ac-table">ACT</p>
+          </div>
+          <div className="st-re-list">
+            <p className="re-table">REC</p>
+          </div>
+          <div className="st-de-list">
+            <p className="de-table">DEC</p>
+          </div>
+          <div className="st-pop-list">
+            <p className="pop-table">POP</p>
+          </div>
+        </div>
         <hr className="hr-line" />
         <div className="states-lists-table">
           <ul className="ul-state-lists">
             {statesInfo.map(eachState => (
               <StatesInfo key={eachState.stateCode} statesData={eachState} />
+            ))}
+          </ul>
+        </div>
+
+        <div className="alternate-st-lists-table">
+          <ul className="ul-st-lists">
+            {statesInfo.map(eachState => (
+              <AlterStatesInfo
+                key={eachState.stateCode}
+                statesData={eachState}
+              />
             ))}
           </ul>
         </div>
@@ -304,7 +337,7 @@ class Home extends Component {
   renderLoadingView = () => (
     // eslint-disable-next-line react/no-unknown-property
     <div className="loader-container" testid="homeRouteLoader">
-      <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
+      <Loader type="Oval" color="#0b69ff" height="50" width="50" />
     </div>
   )
 
@@ -388,15 +421,22 @@ class Home extends Component {
   }
 
   render() {
+    const {isLoading} = this.state
     return (
       <div className="home-app-container">
         <Header />
-        <div className="main-container">
-          {this.renderingSearchInput()}
-          {this.renderingCovid19Status()}
-          {this.renderingAllStatesList()}
-        </div>
-        <Footer />
+        {isLoading ? (
+          this.renderLoadingView()
+        ) : (
+          <>
+            <div className="main-container">
+              {this.renderingSearchInput()}
+              {this.renderingCovid19Status()}
+              {this.renderingAllStatesList()}
+            </div>
+            <Footer />
+          </>
+        )}
       </div>
     )
   }

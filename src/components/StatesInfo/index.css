@@ -98,3 +98,47 @@
   color: #94a3b8;
   margin-left: 45px;
 }
+.sts-name-home {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .states-container-home {
+    margin-bottom: 30px;
+  }
+  .confirmed-columns {
+    margin-top: 24px;
+  }
+  .active-columns {
+    margin-top: 24px;
+  }
+  .recovered-columns {
+    margin-top: 24px;
+  }
+  .deceased-columns {
+    margin-top: 24px;
+  }
+  .population-columns {
+    margin-top: 24px;
+  }
+  .confirmed-home {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .active-home {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .recovered-home {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .deceased-home {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .population-home {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}

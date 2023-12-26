@@ -31,7 +31,7 @@ class Header extends Component {
               <Link to="/" className="link">
                 <p className="home-heading">Home</p>
               </Link>
-              <Link to="/" className="link">
+              <Link to="/about" className="link">
                 <p className="about-heading">About</p>
               </Link>
             </li>
@@ -57,7 +57,7 @@ class Header extends Component {
               <Link to="/" className="link">
                 <p className="hamburger-home-heading">Home</p>
               </Link>
-              <Link to="/" className="link">
+              <Link to="/about" className="link">
                 <p className="hamburger-about-heading">About</p>
               </Link>
             </li>

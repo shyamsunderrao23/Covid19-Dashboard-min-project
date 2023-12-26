@@ -154,7 +154,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 100vh;
 }
 
 .home-app-container {
@@ -341,6 +341,14 @@
   font-weight: 500;
   line-height: 24px; /* 100% */
 }
+.alternative-state-header {
+  display: none;
+}
+
+.alternate-st-lists-table {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .search-container {
     margin-top: 24px;
@@ -384,7 +392,7 @@
   .ul-covid-19-status {
     width: 360px;
     margin-top: 48px;
-    margin-bottom: 0px;
+    margin-bottom: 49px;
     flex-wrap: wrap;
     flex-grow: 0;
   }
@@ -441,5 +449,114 @@
   }
   .deceased-count {
     font-size: 16px;
+  }
+
+  .state-list-container {
+    width: 93%;
+    flex-shrink: 0;
+    margin-bottom: 64px;
+  }
+  .state-table-header {
+    display: none;
+  }
+  .alternative-state-header {
+    display: flex;
+    flex-direction: row;
+  }
+  .st-list-container {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    width: 10%;
+  }
+  .st-table {
+    color: var(--Light-blue-gray-50, #f8fafc);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .st-cn-list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    width: 10%;
+  }
+  .cn-table {
+    color: var(--Light-blue-gray-50, #f8fafc);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .st-ac-list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    width: 10%;
+  }
+  .ac-table {
+    color: var(--Light-blue-gray-50, #f8fafc);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .st-re-list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    width: 10%;
+  }
+  .re-table {
+    color: var(--Light-blue-gray-50, #f8fafc);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .st-de-list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    width: 10%;
+  }
+  .de-table {
+    color: var(--Light-blue-gray-50, #f8fafc);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .st-pop-list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    width: 10%;
+  }
+  .pop-table {
+    color: var(--Light-blue-gray-50, #f8fafc);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .hr-line {
+    width: 100%;
+    height: 1px;
+    margin-top: 0px;
+  }
+  .states-lists-table {
+    display: none;
+  }
+  .alternate-st-lists-table {
+    display: flex;
+    flex-direction: column;
   }
 }
