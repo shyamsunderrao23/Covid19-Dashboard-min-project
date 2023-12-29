@@ -3,6 +3,7 @@ import './App.css'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
+import EachStateData from './components/EachStateDetails'
 import NotFound from './components/NotFound'
 /*
  const statesList = [
@@ -159,6 +160,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
+      <Route exact path="/state/:stateCode" component={EachStateData} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>

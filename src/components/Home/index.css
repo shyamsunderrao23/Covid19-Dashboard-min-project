@@ -176,6 +176,8 @@
   border: 1px solid #2f2f43;
   outline: none;
   border-radius: 8px;
+  margin-left: 308px;
+  margin-right: 350px;
 }
 .search-icon-btn {
   width: 24px;
@@ -201,6 +203,7 @@
   font-weight: 400;
   line-height: 24px; /* 150% */
   margin-left: 8px;
+  border-radius: 8px;
 }
 .ul-covid-19-status {
   width: 979px;
@@ -352,6 +355,8 @@
 @media screen and (max-width: 767px) {
   .search-container {
     margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
   .search-icon-btn {
     width: 20px;
@@ -362,7 +367,8 @@
   }
   .search-input {
     margin-left: 8px;
-    width: 312px;
+    width: 270px;
+    max-width: 350px;
     height: 48px;
     flex-shrink: 0;
   }

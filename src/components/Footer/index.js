@@ -7,7 +7,7 @@ const Footer = () => (
   <>
     <div className="footer-container">
       <h1 className="footer-covid19-heading">
-        COVID<span className="footer-sub-heading">INDIA</span>
+        COVID19<span className="footer-sub-heading">INDIA</span>
       </h1>
       <p className="footer-description">
         we stand with everyone fighting on the front lines

@@ -20,7 +20,7 @@ class About extends Component {
 
   renderLoadingView = () => (
     // eslint-disable-next-line react/no-unknown-property
-    <div className="loader-container" testid="homeRouteLoader">
+    <div className="loader-container" testid="aboutRouteLoader">
       <Loader type="Oval" color="#0b69ff" height="50" width="50" />
     </div>
   )

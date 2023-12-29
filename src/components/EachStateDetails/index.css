@@ -1,0 +1,172 @@
+.main-container {
+  background: #161625;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.state-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-top: 70px;
+}
+
+.state-name-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.state-name-container {
+  color: var(--Light-light-blue-500, #0ea5e9);
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px; /* 150% */
+  border-radius: 32px;
+  background: var(--Light-Transparent-Light-Blue-16, rgba(2, 132, 199, 0.16));
+  padding: 10.541px 21.082px;
+  border: none;
+  margin-bottom: 13px;
+}
+.testno-container {
+  display: flex;
+  flex-direction: column;
+}
+.test-title {
+  color: var(--Light-blue-gray-400, #94a3b8);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  margin-bottom: 4px;
+}
+.testno {
+  color: var(--Light-blue-gray-400, #94a3b8);
+  text-align: right;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+}
+.last-date {
+  color: var(--Light-blue-gray-300, #cbd5e1);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  margin-bottom: 64px;
+  margin-left: 20px;
+}
+.align-center-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+}
+.hovereffectconfirm:active {
+  background-color: #331427;
+}
+
+.district-heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.confirm {
+  color: #ff073a;
+}
+
+.confirmed-block {
+  background: #331427;
+  border-radius: 12px;
+  padding: 42px;
+}
+.active-block {
+  background: #132240;
+  border-radius: 12px;
+  padding: 42px;
+}
+.recovered-block {
+  background: #182829;
+  border-radius: 12px;
+  padding: 42px;
+}
+.deceased-block {
+  background: #212230;
+  border-radius: 12px;
+  padding: 42px;
+}
+
+.total-district-data-block {
+  width: 100%;
+
+  margin-top: 64px;
+}
+.district-data-ul-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.districts-container {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ul-parent-list {
+  list-style-type: none;
+}
+
+.Confirmed-color {
+  color: #ff073a;
+}
+.Active-color {
+  color: #007bff;
+}
+.Recovered-color {
+  color: #28a745;
+}
+.Deceased-color {
+  color: #6c757d;
+}
+
+.list-style-state {
+  list-style-type: none;
+}
+
+.graphs-data {
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .state-name-container {
+    font-size: 16px;
+  }
+
+  .test-title {
+    font-size: 12px;
+  }
+  .testno {
+    font-size: 16px;
+  }
+  .last-date {
+    font-size: 12px;
+  }
+}

@@ -8,6 +8,7 @@ import Header from '../Header'
 import Footer from '../Footer'
 import StatesInfo from '../StatesInfo'
 import AlterStatesInfo from '../AlterStatesInfo'
+import SearchResult from '../SearchResult'
 import './index.css'
 
 // states Data
@@ -161,6 +162,7 @@ const statesList = [
 class Home extends Component {
   state = {
     searchInput: '',
+    filteredStates: [],
     statesInfo: [],
     isLoading: true,
     totalConformedCases: 0,
@@ -342,11 +344,43 @@ class Home extends Component {
   )
 
   onChangeSearchInput = event => {
-    this.setState({searchInput: event.target.value})
+    const searchItem = event.target.value
+    const searchResult = statesList.filter(eachState =>
+      eachState.state_name.toLowerCase().includes(searchItem.toLowerCase()),
+    )
+    this.setState({
+      searchInput: event.target.value,
+      filteredStates: searchResult,
+    })
+  }
+
+  showSearchList = () => {
+    const {filteredStates} = this.state
+    return (
+      <ul
+        className="search-result-container"
+        testid="searchResultsUnorderedList"
+      >
+        {filteredStates.map(each => (
+          <SearchResult
+            key={each.state_code}
+            statename={each.state_name}
+            statecode={each.state_code}
+            id={each.state_code}
+          />
+        ))}
+      </ul>
+    )
+  }
+
+  removeFilteredList = () => {
+    this.setState({filteredStates: []})
   }
 
   renderingSearchInput = () => {
-    const {searchInput} = this.state
+    const {searchInput, filteredStates} = this.state
+    const showSearchList =
+      filteredStates.length === 0 ? '' : this.showSearchList()
     return (
       <>
         <div className="search-container">
@@ -354,14 +388,16 @@ class Home extends Component {
             <BsSearch />
           </label>
           <input
-            type="text"
+            type="search"
             id="search"
             placeholder="Enter the State"
             value={searchInput}
             onChange={this.onChangeSearchInput}
             className="search-input"
+            onAbort={this.removeFilteredList}
           />
         </div>
+        {searchInput.length > 0 ? showSearchList : ''}
       </>
     )
   }
@@ -376,7 +412,7 @@ class Home extends Component {
     return (
       <>
         <div className="ul-covid-19-status">
-          <div className="conform" data-testid="countryWideConfirmedCases">
+          <div className="conform" testid="countryWideConfirmedCases">
             <p className="conform-heading">Confirmed</p>
             <img
               src="https://res.cloudinary.com/dh7ed1uf5/image/upload/v1703331603/check-mark_1_cjfmtq.jpg"
@@ -386,7 +422,7 @@ class Home extends Component {
             <p className="conform-count">{totalConformedCases}</p>
           </div>
 
-          <div className="active" data-testid="countryWideActiveCases">
+          <div className="active" testid="countryWideActiveCases">
             <p className="active-heading">Active</p>
             <img
               src="https://res.cloudinary.com/dh7ed1uf5/image/upload/v1703354095/protection_1_hwzoau.jpg"
@@ -396,7 +432,7 @@ class Home extends Component {
             <p className="active-count">{totalActiveCases}</p>
           </div>
 
-          <div className="recovered" data-testid="countryWideRecoveredCases">
+          <div className="recovered" testid="countryWideRecoveredCases">
             <p className="recovered-heading">Recovered</p>
             <img
               src="https://res.cloudinary.com/dh7ed1uf5/image/upload/v1703354384/recovered_1_azsiy0.jpg"
@@ -406,7 +442,7 @@ class Home extends Component {
             <p className="recovered-count">{totalRecoveredCases}</p>
           </div>
 
-          <div className="deceased" data-testid="countryWideDeceasedCases">
+          <div className="deceased" testid="countryWideDeceasedCases">
             <p className="deceased-heading">Deceased</p>
             <img
               src="https://res.cloudinary.com/dh7ed1uf5/image/upload/v1703354699/breathing_1_pmnrlu.jpg"

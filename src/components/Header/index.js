@@ -1,81 +1,72 @@
-import './index.css'
 import {Component} from 'react'
 import {Link} from 'react-router-dom'
+import './index.css'
 
 class Header extends Component {
-  state = {
-    showMenu: false,
+  state = {isToggleActive: false}
+
+  whenToggleButtonClick = () => {
+    this.setState(prevState => ({isToggleActive: !prevState.isToggleActive}))
   }
 
-  onClickHamburgerBtn = () => {
-    this.setState(prevState => ({showMenu: !prevState.showMenu}))
-  }
+  showDropDownMenu = () => (
+    <>
+      <ul className="navBar">
+        <Link to="/" className="link">
+          <li className="item">Home</li>
+        </Link>
 
-  onClickCloseBtn = () => {
-    this.setState({showMenu: false})
-  }
+        <li className="item">Vaccination</li>
+
+        <Link to="/about" className="link">
+          <li className="item">About</li>
+        </Link>
+      </ul>
+    </>
+  )
 
   render() {
-    const {showMenu} = this.state
-
+    const {isToggleActive} = this.state
+    console.log(isToggleActive)
     return (
       <>
-        <nav className="header-bg-color">
+        <div className="header-container">
           <Link to="/" className="link">
-            <h1 className="covid19-heading">
-              COVID19 <span className="india-heading">INDIA</span>
-            </h1>
+            <h1 className="logo">COVID19INDIA</h1>
           </Link>
-          <ul className="ul-items-list">
-            <li className="li-items-list">
-              <Link to="/" className="link">
-                <p className="home-heading">Home</p>
-              </Link>
-              <Link to="/about" className="link">
-                <p className="about-heading">About</p>
-              </Link>
-            </li>
-          </ul>
+          <ul className="navBar">
+            <Link to="/" className="link">
+              <li className="item">Home</li>
+            </Link>
 
-          <div className="hamburger-nav-items">
+            <li className="item">Vaccination</li>
+
+            <Link to="/about" className="link">
+              <li className="item">About</li>
+            </Link>
+          </ul>
+        </div>
+        <div className="mobile-menu">
+          <div className="mobile-header-container">
+            <Link to="/" className="link">
+              <h1 className="logo">COVID19INDIA</h1>
+            </Link>
             <button
               type="button"
-              className="menu-btn"
-              onClick={this.onClickHamburgerBtn}
+              className="toggle-button"
+              onClick={this.whenToggleButtonClick}
             >
               <img
                 src="https://res.cloudinary.com/dh7ed1uf5/image/upload/v1703096249/add-to-queue_1_wxma8l.png"
-                alt="menu item"
-                className="menu-img"
+                alt="menu"
               />
             </button>
           </div>
-        </nav>
-        {showMenu ? (
-          <ul className="hamburger-ul-menu-list">
-            <li className="hamburger-li-menu-list">
-              <Link to="/" className="link">
-                <p className="hamburger-home-heading">Home</p>
-              </Link>
-              <Link to="/about" className="link">
-                <p className="hamburger-about-heading">About</p>
-              </Link>
-            </li>
-            <li className="close-li">
-              <button
-                className="close-btn"
-                type="button"
-                onClick={this.onClickCloseBtn}
-              >
-                <img
-                  src="https://res.cloudinary.com/dh7ed1uf5/image/upload/v1703098259/Solid_gwyfan.png"
-                  alt="close icon"
-                  className="close-icon"
-                />
-              </button>
-            </li>
-          </ul>
-        ) : null}
+
+          <div className="menu">
+            {isToggleActive ? this.showDropDownMenu() : ''}
+          </div>
+        </div>
       </>
     )
   }
